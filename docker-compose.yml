@@ -41,5 +41,5 @@ volumes:
     external: true
     
 networks:
-  springappnetwork:
+  springboot:
     external: true
