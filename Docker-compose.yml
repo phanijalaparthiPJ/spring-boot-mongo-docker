@@ -40,8 +40,13 @@ services:
 volumes:
   mongodb:
     driver: local
-    external: true 
+    #external: true 
+
 networks:
-  springbootbridge :
-    driver: bridge
-    external: true
+  default:
+    external:
+      name: customoverlay
+  #springbootbridge :
+   #driver: bridge
+    #external: 
+   
