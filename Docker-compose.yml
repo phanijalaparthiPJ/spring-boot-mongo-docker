@@ -40,7 +40,7 @@ services:
 
 volumes:
   mongodb:
-  mangodb-bkp:
+  mongodb-bkp:
     #driver: local
     #external: true 
 
