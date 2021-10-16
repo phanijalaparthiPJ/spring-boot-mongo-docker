@@ -3,7 +3,7 @@ services:
   springboot:
     image: phanidocker1912/spring-boot-mongo:1
     restart: always # This will be ignored if we deploy in docker swarm
-    container_name: springbootapplication
+    container_name: 
     environment:
     - MONGO_DB_HOSTNAME=mongo
     - MONGO_DB_USERNAME=devdb
@@ -27,7 +27,7 @@ services:
 
   mongo:
     image: mongo
-    container_name: springboot-mongo
+    container_name: 
     environment:
     - MONGO_INITDB_ROOT_USERNAME=devdb
     - MONGO_INITDB_ROOT_PASSWORD=devdb1234
