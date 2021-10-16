@@ -1,6 +1,6 @@
 version: '3.1'
 services:
-  springboot:
+  springbootapps:
     image: phanidocker1912/spring-boot-mongo-docker:latest
     restart: always # This will be ignored if we deploy in docker swarm
     container_name: springbootapplication
