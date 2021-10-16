@@ -22,8 +22,8 @@ services:
         condition: on-failure
         delay: 10s
         max_attempts: 5
-    networks:
-    - springbootbridge
+    #networks:
+    #- springbootbridge
 
   mongo:
     image: mongo
@@ -32,15 +32,16 @@ services:
     - MONGO_INITDB_ROOT_USERNAME=devdb
     - MONGO_INITDB_ROOT_PASSWORD=devdb1234
     volumes:
-    - mongodb:/data/db
-    - mongodb-bkp:/data/bkp
+    - mongodb: /data/db
+    - mongodb-bkp: /data/bkp
     restart: always
-    networks:
-    - springbootbridge
+    #networks:
+    #- springbootbridge
 
 volumes:
   mongodb:
-    driver: local
+  mangodb-bkp:
+    #driver: local
     #external: true 
 
 networks:
