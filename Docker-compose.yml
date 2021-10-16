@@ -33,7 +33,7 @@ services:
     - MONGO_INITDB_ROOT_PASSWORD=devdb1234
     volumes:
     - mongodb:/data/db
-    - mngodb-bkp:/data/bkp
+    - mongodb-bkp:/data/bkp
     restart: always
     networks:
     - springbootbridge
