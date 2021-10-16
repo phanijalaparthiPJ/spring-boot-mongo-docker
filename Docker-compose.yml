@@ -40,6 +40,8 @@ services:
 volumes:
   mongodb:
     driver: local
+    external: true 
 networks:
   springbootbridge :
     driver: bridge
+    external: true
