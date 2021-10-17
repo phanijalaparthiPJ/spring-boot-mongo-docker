@@ -62,6 +62,6 @@ networks:
     
       name: customoverlay
   #springbootbridge :
-   #driver: bridge
+   driver: bridge
     external: true 
    
