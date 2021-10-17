@@ -61,7 +61,7 @@ volumes:
 
 networks:
   customoverlay:
-    driver: overlay
+    #driver: overlay
     external: true
   #springbootbridge :
    #driver: bridge
