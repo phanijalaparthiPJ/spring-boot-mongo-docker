@@ -52,15 +52,17 @@ services:
     #- springbootbridge
 
 volumes:
+  customoverlay:
+    driver: local
   mongodb:
   mongodb-bkp:
-    #driver: local
+    driver: local
     #external: true 
 
 networks:
-  default:
-    external:
-      name: customoverlay
+  customoverlay:
+    driver: overlay
+    external: true
   #springbootbridge :
    #driver: bridge
     #external: true 
