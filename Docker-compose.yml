@@ -53,10 +53,10 @@ services:
 
 volumes:
   customoverlay:
-    driver: local
+    #driver: local
   mongodb:
   mongodb-bkp:
-    driver: local
+    #driver: local
     #external: true 
 
 networks:
